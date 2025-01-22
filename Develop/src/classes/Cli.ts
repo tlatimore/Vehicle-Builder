@@ -320,7 +320,7 @@ class Cli {
           // TODO: add options to tow and wheelie
           choices: [
             'Print details',
-            'Get a tow',
+            'Tow a vehicle',
             'Start vehicle',
             'Accelerate 5 MPH',
             'Decelerate 5 MPH',
@@ -395,7 +395,7 @@ class Cli {
         }
         // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
         // TODO: add statements to perform the wheelie action only if the selected vehicle is a motorbike
-        else if (answers.action === 'Get a tow') {
+        else if (answers.action === 'Tow a vehicle') {
           let truck: Truck | undefined;
 
           for (let i = 0; i < this.vehicles.length; i++) {

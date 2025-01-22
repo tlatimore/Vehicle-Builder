@@ -38,15 +38,17 @@ class Motorbike extends Vehicle {
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
-    this.wheels = wheels;
+
     if (wheels.length !== 2) {
       this.wheels = [new Wheel(), new Wheel()];
+    }else {
+      this.wheels = wheels;
     }
   }
 
   // TODO: Implement the wheelie method
     // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
-  wheelie() {
+  wheelie():void {
     console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
   }
 
@@ -55,7 +57,7 @@ class Motorbike extends Vehicle {
   // TODO: The method should log the details of the Motorbike
   // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
 
-  override printDetails() {
+  override printDetails():void {
     super.printDetails();
     console.log(`VIN: ${this.vin}`);
     console.log(`Make: ${this.make}`);
@@ -64,7 +66,10 @@ class Motorbike extends Vehicle {
     console.log(`Weight ${this.weight}`);
     console.log(`Top Speed: ${this.topSpeed}`);
     console.log(`Color: ${this.color}`);
-    console.log(`Wheels:${this.wheels}`);
+    
+    console.log(`Wheel 1: ${this.wheels[0].getDiameter} inches with a, ${this.wheels[0].getTireBrand} tire`);
+    console.log(`Wheel 2: ${this.wheels[1].getDiameter} inches with a, ${this.wheels[1].getTireBrand} tire`);
+  
   }
 }
 
