@@ -16,6 +16,8 @@
   * [Tests](#tests)
 
   * [Questions](#questions)
+
+  * [Walkthrough](#walkthrough-video)
     
   * [license](#license)
 
@@ -48,6 +50,9 @@
   For any questions, please contact me using the information below:
   GitHub: [tlatimore](https://gitgub.com/tlatimore)
   Email: tlatimore0551@yahoo.com
+
+  ## Walkthrough Video
+  https://drive.google.com/file/d/1Fc1CxtAqxwuhfH0t6JK5t-Irkr1j5goc/view?usp=drive_link
 
   ## License
     
